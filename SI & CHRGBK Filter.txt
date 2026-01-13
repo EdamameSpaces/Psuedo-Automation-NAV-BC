@@ -1,0 +1,11 @@
+Walmart SI Filter
+=TEXTJOIN("|", TRUE, UNIQUE(FILTER("SI"&B2:B30, B2:B32<>"")))
+
+Chargeback Filter
+=TEXTJOIN("|", TRUE, FILTER(C2:C15, MOD(ROW(C3:C16),2)=1))
+
+SI Filter Simplified
+=TEXTJOIN("|", TRUE, A2:A8)
+
+SI Filter Simplified + Trim
+=TEXTJOIN("|", TRUE, TRIM(A2:A8))
